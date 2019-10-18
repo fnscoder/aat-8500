@@ -1,3 +1,8 @@
 from django.contrib import admin
+from .models import Atuacao, Carro, Falha, Trem
 
-# Register your models here.
+
+admin.site.register(Atuacao)
+admin.site.register(Carro)
+admin.site.register(Falha)
+admin.site.register(Trem)
