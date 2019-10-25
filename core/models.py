@@ -89,3 +89,10 @@ class Atuacao(models.Model):
                                on_delete=models.DO_NOTHING,
                                blank=True,
                                null=True)
+
+    def __str__(self):
+        return f'Falha: {self.falha} Trem: {self.trem}'
+
+    class Meta:
+        verbose_name = ('atuação')
+        verbose_name_plural = ('atuações')
